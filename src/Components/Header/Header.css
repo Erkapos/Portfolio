@@ -1,0 +1,65 @@
+.header{
+  display: flex;
+  font-size: xx-large;
+  padding: 0 15%;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  flex-direction: column;
+  background-color: #181a2b;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+
+}
+
+.name {
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.gap {
+  height: 8rem;
+}
+
+.arrow-down {
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  border-style: solid;
+  border-color: #fb4855;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  color: white;
+  border-radius: 500px;
+  width: 35px;
+  height: 70px;  
+  cursor: pointer;
+}
+
+
+.header-container > div{
+  display: flex;
+  justify-content: center;
+}
+
+#arrow-pointing-down {
+  color: #fb4855;
+  animation: blink 2.5s ease-in infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

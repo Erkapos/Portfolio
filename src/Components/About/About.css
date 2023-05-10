@@ -1,0 +1,88 @@
+.about {
+  color: #fb4855;
+  background-color: #23263a;
+}
+
+.about-container {
+  display: flex;
+  padding: 5% 0;
+  margin: 0 15%;
+  flex-direction: column;
+}
+
+.about-heading {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  border-bottom-style: solid;
+  border-bottom-color: #fb4855;
+  text-transform: capitalize;
+}
+
+.about-card {
+  margin: 2% 0;
+  padding: 10% 0;
+  font-size: 1.3rem;
+  color: white;
+  border-bottom-style: solid;
+  border-bottom-color: #fb4855;
+
+  border-top-style: solid;
+  border-top-color: #fb4855;
+  border-width: 1px;
+}
+
+.about-title {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+hr {
+  height: 2px;
+  background-color: #2b2d41;
+  border: none;
+}
+
+.material-symbols-outlined {
+  color: #fb4855;
+}
+
+.about-grid {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+}
+
+.animation-slide {
+  animation-duration: 1.5s;
+  animation-name: slide-up-animation;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide-up-animation {
+  from {
+    transform: translateY(10%);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about-card {
+    border-top-style: none;
+    border-width: 1px;
+  }
+}

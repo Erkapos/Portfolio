@@ -1,0 +1,23 @@
+#navbar {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #181a2b;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  padding: 1% 20px;
+  color: white;
+}
+
+a:hover {
+  background-color: #121420;
+  cursor: pointer;
+}
