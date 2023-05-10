@@ -7,11 +7,6 @@
   background-color: #181a2b;
 }
 
-.navbar-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 a {
   padding: 1% 20px;
   color: white;
@@ -20,4 +15,43 @@ a {
 a:hover {
   background-color: #121420;
   cursor: pointer;
+}
+
+.active {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-container {
+  display: flex;
+}
+
+.tablet-container {
+  margin: 1rem ;
+}
+
+.hidden {
+  display: none;
+}
+
+#hamburger {
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    justify-content: start;
+  }
+
+  .tablet-container {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) {
+  .mobile-container {
+    display: none;
+  }
 }

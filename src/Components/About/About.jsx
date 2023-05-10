@@ -1,11 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./About.css";
 import AboutContainer from "./About-container";
 
 function About() {
-  
-
   return (
     <div className="about">
       <div className="about-container">
@@ -16,31 +13,21 @@ function About() {
           <AboutContainer
             title="Education"
             span=<span className="material-symbols-outlined">school</span>
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 19"
+            content="Fresh graduate from Universitas Pelita Harapan with informatics major on May 2023 with 3.4 GPA. Furthermore, took the time to learn more front-end materials by taking Udemy online course."
           />
           <AboutContainer
             title="Experience"
             span=<span className="material-symbols-outlined">work</span>
-            content="I have the greatest opportunity to intern at a startup made by PT
-            DUTA LASERINDO METAL. There i work as a mobile developer where i
-            used"
+            content="I have the privilege to intern at a startup made by PT
+            DUTA LASERINDO METAL, NUVOTEK. There i work as a mobile developer where i
+            used Flutter to develop the front-end and new features on a 6 months internship."
           />
           <AboutContainer
             title="Hobbies"
             span=<span className="material-symbols-outlined">
               sports_esports
             </span>
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 19"
+            content="Likes playing games from FPS, MOBA, to rhythm games, listening to music, and sleeping. Currently, making an effort to learn how to draw."
           />
         </div>
       </div>

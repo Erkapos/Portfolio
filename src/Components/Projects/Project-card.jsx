@@ -19,7 +19,9 @@ function ProjectCard(props) {
         <AnimationOnScroll animateIn="animate__bounceIn">
           <h2>{props.title}</h2>
           <p id="project-description">{props.content}</p>
-          <Button variant="contained">Try it !</Button>
+          <Button target="_blank" href={props.tryLink} variant="contained">
+            Try it !
+          </Button>
         </AnimationOnScroll>
       </div>
     </div>

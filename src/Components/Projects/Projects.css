@@ -45,6 +45,7 @@
 #project-description {
   color: #4d4f61;
   text-transform: lowercase;
+  padding: 1rem 0;
 }
 
 .project-image {
@@ -61,6 +62,10 @@
   background-color: #fb4855 !important;
   max-width: 40%;
   color: black !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #c0353f !important;
 }
 
 /* .animation-come-right {

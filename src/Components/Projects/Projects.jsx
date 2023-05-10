@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./Projects.css";
 import pokemon from "../Projects/images/pokemon-info-finder-image.png";
+import udemy from "../Projects/images/udemy.png";
 import ProjectCard from "./Project-card.jsx";
 
 function Projects() {
@@ -12,10 +13,16 @@ function Projects() {
       </h2>
       <ProjectCard
         title="Pokemon Info Finder"
-        content="A website that can search pokemon information using Poke API"
+        content="A website that can search pokemon information using Poke API by putting pokemon name inside the search bar."
+        tryLink="https://master--astounding-chimera-f05bfb.netlify.app"
         image={pokemon}
       />
-      <ProjectCard title="asd" content="dsadas" image={example} />
+      <ProjectCard
+        title="Udemy Clone"
+        content="Cloning udemy website to practice implementing design"
+        image={udemy}
+        tryLink="https://main--cute-muffin-b9e36b.netlify.app/"
+      />
     </div>
   );
 }
