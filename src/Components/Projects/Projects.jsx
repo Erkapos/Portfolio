@@ -15,12 +15,14 @@ function Projects() {
         title="Pokemon Info Finder"
         content="A website that can search pokemon information using Poke API by putting pokemon name inside the search bar."
         tryLink="https://master--astounding-chimera-f05bfb.netlify.app"
+        language={["react js", "tailwind", "axios"]}
         image={pokemon}
       />
       <ProjectCard
         title="Udemy Clone"
-        content="Cloning udemy website to practice implementing design"
+        content="Cloning udemy website to practice implementing design with responsive capabilities"
         image={udemy}
+        language={["html", "tailwind", "javascript", ]}
         tryLink="https://main--cute-muffin-b9e36b.netlify.app/"
       />
     </div>

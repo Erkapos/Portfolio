@@ -19,16 +19,30 @@
 }
 
 .about-card {
-  margin: 2% 0;
-  padding: 10% 0;
   font-size: 1.3rem;
   color: white;
   border-bottom-style: solid;
   border-bottom-color: #fb4855;
-
   border-top-style: solid;
   border-top-color: #fb4855;
   border-width: 1px;
+  transition: 0.4s;
+}
+
+.about-grid > *:hover {
+  padding: 0 1rem;
+  background-color: #fb4855;
+  color: white;
+
+  .material-symbols-outlined {
+    color: white;
+  }
+}
+
+.about-card-content {
+  margin: 2% 0;
+  padding: 10% 0;
+  height: auto;
 }
 
 .about-title {

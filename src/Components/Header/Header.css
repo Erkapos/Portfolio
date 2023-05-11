@@ -40,6 +40,15 @@
   width: 35px;
   height: 70px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-down:hover{
+  background-color: #fb4855;
+
+  #arrow-pointing-down {
+  color: white;
+}
 }
 
 .header-container > div {

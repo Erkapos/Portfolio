@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import Button from "@mui/material/Button";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function ProjectCard(props) {
+  const myRef = useRef();
+  const [isVisible, setIsVisible] = useState();
+  useEffect(function () {
+    const observer = new IntersectionObserver(function (entries) {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    });
+    observer.observe(myRef.current);
+  });
+
   return (
     <div className="projects-flex">
       <p className="left-flex">
@@ -15,14 +27,28 @@ function ProjectCard(props) {
         ></img>
       </p>
       {/* + (isVisible ? "animation-come-right" : "") */}
-      <div className={"right-flex "}>
-        <AnimationOnScroll animateIn="animate__bounceIn">
+      <div
+        ref={myRef}
+        className={"right-flex " + (isVisible ? "animation-come-right" : "")}
+      >
+        <h2>{props.title}</h2>
+        <p id="project-description">{props.content}</p>
+
+        <div id="language-used">
+          {props.language.map((each) => {
+            return <div id="language">{each}</div>;
+          })}
+        </div>
+        <Button target="_blank" href={props.tryLink} variant="contained">
+          Try it !
+        </Button>
+        {/* <AnimationOnScroll animateIn="animate__bounceIn">
           <h2>{props.title}</h2>
           <p id="project-description">{props.content}</p>
           <Button target="_blank" href={props.tryLink} variant="contained">
             Try it !
           </Button>
-        </AnimationOnScroll>
+        </AnimationOnScroll> */}
       </div>
     </div>
   );
