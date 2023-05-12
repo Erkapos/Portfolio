@@ -71,7 +71,12 @@
 #project-description {
   color: #4d4f61;
   text-transform: lowercase;
-  padding: 1rem 0;
+}
+
+#note{
+  color: #4d4f61;
+  font-size: 1.15rem;
+  text-transform: lowercase;
 }
 
 .project-image {

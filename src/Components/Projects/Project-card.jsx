@@ -33,6 +33,7 @@ function ProjectCard(props) {
       >
         <h2>{props.title}</h2>
         <p id="project-description">{props.content}</p>
+        {props.note !== '' ? <p id="note">{props.note}</p> : null}
 
         <div id="language-used">
           {props.language.map((each) => {

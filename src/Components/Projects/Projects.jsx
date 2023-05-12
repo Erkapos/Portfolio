@@ -17,6 +17,7 @@ function Projects() {
         tryLink="https://master--astounding-chimera-f05bfb.netlify.app"
         language={["react js", "tailwind", "axios"]}
         image={pokemon}
+        note=""
       />
       <ProjectCard
         title="Udemy Clone"
@@ -24,6 +25,7 @@ function Projects() {
         image={udemy}
         language={["html", "tailwind", "javascript", ]}
         tryLink="https://main--cute-muffin-b9e36b.netlify.app/"
+        note="**  Note : website is designed for front-end purposes only, button is not functional"
       />
     </div>
   );
