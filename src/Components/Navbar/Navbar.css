@@ -2,9 +2,9 @@
   display: flex;
   justify-content: end;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
-  background-color: #181a2b;
+  background-color: #101327;
 }
 
 a {
