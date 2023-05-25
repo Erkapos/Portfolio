@@ -24,7 +24,7 @@ function Footer() {
         </a>
       </div>
 
-      <p>Created by Me</p>
+      <p>Created by Peter Iskandar</p>
       <p>{currentYear}</p>
     </div>
   );

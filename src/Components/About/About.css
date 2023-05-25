@@ -1,12 +1,13 @@
 .about {
   color: #fb4855;
   background-color: #23263a;
+  z-index: 2;
+  position: relative;
 }
 
 .about-container {
   display: flex;
-  padding: 5% 0;
-  margin: 0 15%;
+  padding: 5% 15%;
   flex-direction: column;
 }
 
@@ -19,6 +20,7 @@
 }
 
 .about-card {
+  padding: 0 1rem;
   font-size: 1.3rem;
   color: white;
   border-bottom-style: solid;
@@ -30,13 +32,12 @@
 }
 
 .about-grid > *:hover {
-  padding: 0 1rem;
   background-color: #fb4855;
   color: white;
-
-  .material-symbols-outlined {
-    color: white;
-  }
+}
+/* change icon to white when hovered */
+.about-grid > *:hover .material-symbols-outlined {
+  color: white;
 }
 
 .about-card-content {
@@ -86,6 +87,12 @@ hr {
   to {
     transform: translateY(0);
     opacity: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    padding: 0 5% 10% 5%;
   }
 }
 

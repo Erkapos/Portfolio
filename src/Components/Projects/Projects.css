@@ -92,7 +92,7 @@
 .MuiButton-containedPrimary {
   background-color: #fb4855 !important;
   max-width: 40%;
-  color: black !important;
+  color: white !important;
   transition: 0.2s;
 }
 
@@ -114,6 +114,16 @@
   to {
     transform: translateX(0);
     opacity: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-flex {
+    margin: 5%;
+  }
+  
+  .projects-container{
+    margin-left: 5%;
   }
 }
 

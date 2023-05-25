@@ -10,6 +10,7 @@
   justify-content: center;
   color: #4d4f61;
   text-transform: capitalize;
+  line-height: 0;
 }
 
 .footer > div{
@@ -20,3 +21,4 @@
 .footer-icons > a > img {
   width: 3rem;
 }
+

@@ -12,6 +12,13 @@ function HandleClick() {
 function Header() {
   return (
     <div className="header">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
       <div className="header-container">
         <h1 className="name">Peter Iskandar</h1>
         <h2 className="desc">an aspiring front end developer</h2>

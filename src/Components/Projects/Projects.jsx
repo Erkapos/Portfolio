@@ -25,7 +25,7 @@ function Projects() {
         image={udemy}
         language={["html", "tailwind", "javascript", ]}
         tryLink="https://main--cute-muffin-b9e36b.netlify.app/"
-        note="**  Note : website is designed for front-end purposes only, button is not functional"
+        note="**  Note : website is designed for front-end purposes only, buttons are not functional"
       />
     </div>
   );
