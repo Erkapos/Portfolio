@@ -1,6 +1,7 @@
 .about {
   color: #fb4855;
   background-color: #23263a;
+  padding: 2rem 0;
   z-index: 2;
   position: relative;
 }
