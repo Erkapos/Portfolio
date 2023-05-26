@@ -1,8 +1,14 @@
+#navbar-container{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 #navbar {
   display: flex;
   justify-content: end;
   position: fixed;
   z-index: 999;
+  box-sizing: border-box;
   width: 100%;
   background-color: #101327;
 }

@@ -14,16 +14,29 @@ function Navbar() {
   }
 
   return (
-    <div id="navbar">
-      <div className="mobile-container">
-        <a
-          onClick={() => {
-            handleClick();
-          }}
-        >
-          <img src={hamburger} id="hamburger" />
-        </a>
-        <div id="dropdown" className="hidden">
+    <div id="navbar-container">
+      <div id="navbar">
+        <div className="mobile-container">
+          <a
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            <img src={hamburger} id="hamburger" />
+          </a>
+          <div id="dropdown" className="hidden">
+            <Link activeClass="active" to="header">
+              Home
+            </Link>
+            <Link activeClass="active" to="about">
+              About
+            </Link>
+            <Link activeClass="active" to="projects">
+              Project
+            </Link>
+          </div>
+        </div>
+        <div className="tablet-container">
           <Link activeClass="active" to="header">
             Home
           </Link>
@@ -34,17 +47,6 @@ function Navbar() {
             Project
           </Link>
         </div>
-      </div>
-      <div className="tablet-container">
-        <Link activeClass="active" to="header">
-          Home
-        </Link>
-        <Link activeClass="active" to="about">
-          About
-        </Link>
-        <Link activeClass="active" to="projects">
-          Project
-        </Link>
       </div>
     </div>
   );
