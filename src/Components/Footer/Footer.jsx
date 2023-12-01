@@ -24,7 +24,9 @@ function Footer() {
         </a>
       </div>
 
+      <br />
       <p>Created by Peter Iskandar</p>
+      <br />
       <p>{currentYear}</p>
     </div>
   );

@@ -21,7 +21,7 @@ function Header() {
       <li></li>
       <div className="header-container">
         <h1 className="name">Peter Iskandar</h1>
-        <h2 className="desc">an aspiring front end developer</h2>
+        <h2 className="desc">front end developer</h2>
         <div onClick={HandleClick}>
           <div className="arrow-down">
             <span

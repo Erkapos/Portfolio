@@ -18,9 +18,23 @@ function About() {
           <AboutContainer
             title="Experience"
             span=<span className="material-symbols-outlined">work</span>
-            content="I have the privilege to intern at a startup made by PT
-            DUTA LASERINDO METAL, NUVOTEK. There i work as a mobile developer where i
-            used Flutter to develop the front-end and new features on a 6 months internship."
+            content={
+              <ul>
+                <li>
+                  I worked at Sun Education Group as a Frontend Developer. I
+                  collaborated with other frontend developers, backend
+                  developers, and UI/UX team. I handled multiple key feature for
+                  4 months.
+                </li>
+                <br />
+                <li>
+                  I have the privilege to intern at a startup made by Duta
+                  Laserindo Metal. There i work as a mobile developer where i
+                  used Flutter to develop the front-end and new features on a 6
+                  months internship.
+                </li>
+              </ul>
+            }
           />
           <AboutContainer
             title="Hobbies"
